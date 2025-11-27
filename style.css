@@ -1230,12 +1230,8 @@ nav a {
     height: 50px;
     /* text-align: center; */
   }
-  nav a:hover {
-    /* color: blue;
-    text-decoration: underline; */
-    background-color: #ef6d58;
-    padding: 8px 12px;
-    border-radius: 30px;
+  nav a:hover{
+    color: wheat;
   }
   .angka {
     background-color: #f3d1bf;
