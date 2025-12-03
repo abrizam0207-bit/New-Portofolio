@@ -12,7 +12,11 @@
     />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" href="./ChatGPT_Image_27_Nov_2025__13.26.48-removebg-preview.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./ChatGPT_Image_27_Nov_2025__13.26.48-removebg-preview.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header>
@@ -31,7 +35,13 @@
         </div>
       </nav>
     </header>
-
+    <div id="welcome-screen">
+      <div class="content-box">
+        <h1>WELCOME</h1>
+        <p>Brizz.L Portfolio</p>
+        <button id="enter-btn">Click to Enter</button>
+      </div>
+    </div>
     <section id="Home">
       <div class="container-1">
         <div class="kiri">
@@ -496,5 +506,27 @@
       </div>
       <footer>Copyright&copy;brizzzzaam 2025</footer>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const welcomeScreen = document.getElementById("welcome-screen");
+        const enterBtn = document.getElementById("enter-btn");
+
+        // 1. Kunci scroll saat halaman dimuat
+        document.body.classList.add("stop-scrolling");
+
+        enterBtn.addEventListener("click", () => {
+          // 2. Tambahkan class CSS untuk efek memudar (fade out)
+          welcomeScreen.classList.add("hide-welcome");
+
+          // 3. Buka kunci scroll agar user bisa melihat web
+          document.body.classList.remove("stop-scrolling");
+
+          // --- OPSIONAL: Putar Musik di sini ---
+          // const audio = new Audio('musik-anda.mp3');
+          // audio.play();
+        });
+      });
+    </script>
   </body>
 </html>
